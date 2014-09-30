@@ -4,12 +4,12 @@ var salesLeft = $('.sales__left');
 var salesRight = $('.sales__right');
 
 var salesClicker = function () {
-	var isActive = salesLeft.attr('data-state');
+	var isActive = salesDetailsLeft.attr('data-state');
 
 	if (isActive == 'active') {
-		salesDetailsLeft.attr('data-state', 'inactive');
+		salesDetailsLeft.attr('data-state','inactive');
 		}else{
-		salesDetailsLeft.attr('data-state', 'active');
+		salesDetailsLeft.attr('data-state','active');
 	}
 	
 };
@@ -18,12 +18,12 @@ var salesClicker = function () {
 salesLeft.on('click', salesClicker);
 
 var salesClicker = function () {
-	var isActive = salesRight.attr('data-state');
+	var isActive = salesDetailsRight.attr('data-state');
 
 	if (isActive == 'active') {
-		salesDetailsRight.attr('data-state', 'inactive');
+		salesDetailsRight.attr('data-state','inactive');
 		}else{
-		salesDetailsRight.attr('data-state', 'active');
+		salesDetailsRight.attr('data-state','active');
 	}
 	
 };

@@ -91,11 +91,14 @@ body {
 
   background-color: #000;
   border-radius: 6px;
+
+  transition: all 250ms linear;
 }
 
 .sales__details[data-state="active"] {
     opacity: 1;
-   transition: all 250ms linear;
+    margin-top: -0.5em;
+
 }
 
 .sales__details::before {
